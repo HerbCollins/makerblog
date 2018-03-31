@@ -1,0 +1,136 @@
+body{
+    background-color: #e2e2e0;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+img{
+    width:100%;
+}
+
+p{
+    padding:0px;
+    line-height: 1;
+    margin:0px;
+}
+h1{
+    margin:0px;
+    font-size: 20px;
+}
+
+h2{
+    margin:0px;
+    font-size: 18px;
+}
+
+.p-t-10{
+    padding-top:10px;
+}
+
+.p-t-20{
+    padding-top:20px;
+}
+
+.p-t-30{
+    padding-top:30px;
+}
+a{
+    color:inherit;
+}
+
+.panel{
+    -webkit-box-shadow:     none;
+    -moz-box-shadow:     none;
+    box-shadow:     none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.box-bottom , .box-description{
+    color:#a0a0a0;
+}
+.box-description{
+    font-size: 12px;
+}
+.box-parent{
+    margin:10px 0px;
+}
+
+.box{
+    background-color: #ffffff;
+    padding:20px;
+    text-align: center;
+}
+
+.page-title{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.author{
+    padding-top:10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom:1px solid #a9a9a9;
+}
+.page-author{
+    font-size: 12px;
+    display: block;
+    color:darkred;
+}
+.page-description{
+    color:#999;
+}
+
+.shareto span{
+    display: block;
+    margin:10px auto;
+    color:#999;
+}
+
+.navbar{
+    background-color: #fcfcfc;
+    border:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.navbar-collapse{
+    padding-left:0px;
+    padding-right:0px;
+}
+.navbar-nav > li > a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.list-group{
+    font-size:12px;
+    margin:0px;
+}
+
+.list-group-item{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border:0px;
+}
+.list-group-item:first-child{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.dropdown-menu{
+    border:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding:0px;
+}
+.dropdown-menu > li > a{
+    padding:10px 20px;
+}
