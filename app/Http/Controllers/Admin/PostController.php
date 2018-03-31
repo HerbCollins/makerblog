@@ -121,4 +121,14 @@ class PostController extends Controller
     {
         return response()->json();
     }
+
+    public function not_published()
+    {
+        return view('admin.post.not_published');
+    }
+
+    public function trashed()
+    {
+        return view('admin.post.trash');
+    }
 }

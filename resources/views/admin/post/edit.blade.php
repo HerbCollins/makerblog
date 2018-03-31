@@ -1,5 +1,9 @@
 @extends('admin.layouts.base')
 
+@section('css')
+    <link rel="stylesheet" href="{{ asset('editormd/css/editormd.css') }}">
+@endsection
+
 @section('content')
     <div class="card">
         <div class="header">
@@ -51,9 +55,9 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" id="editorcontent">
                     <label for="">内容</label>
-                    <textarea name="" cols="10" rows="10" class="form-control"></textarea>
+                    <textarea style="display: none;" name="content"></textarea>
                 </div>
                 <div class="form-group text-right">
                     <button type="submit" class="btn btn-primary">{{ trans('common.submit') }}</button>
@@ -61,4 +65,26 @@
             </form>
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script type="text/javascript" src="{{ asset('editormd/src/editormd.js') }}"></script>
+    <script type="text/javascript">
+        var testEditor;
+        $(function () {
+            testEditor = editormd("editorcontent",{
+                width:"100%",
+                height:600,
+                syncScrolling:"single",
+                taskList : true,
+                tocm: true,
+                path:"{{asset('/editormd/lib/')}}" + "/",
+                tex:true,
+                flowChart       : true,
+                sequenceDiagram:true,
+                saveHTMLToTextarea : true,
+                imageUploadURL: "php/upload.php",
+            });
+        });
+    </script>
 @endsection

@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="{{ asset('fontawesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bootcss/css/bootstrap.css') }}">
     <link href="{{ asset('css/light-bootstrap-dashboard.css') }}" rel="stylesheet"/>
-
+    @yield('css')
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="{{ asset('bootcss/js/bootstrap.js') }}"></script>
 </head>
@@ -228,23 +228,6 @@
 <script src="{{ asset('js/jquery.sharrre.js') }}"></script>
 
 
-<script type="text/javascript">
-    $(document).ready(function(){
-
-        demo.initDashboardPageCharts();
-        demo.initVectorMap();
-
-        $.notify({
-            icon: 'pe-7s-bell',
-            message: "<b>Light Bootstrap Dashboard PRO</b> - forget about boring dashboards."
-
-        },{
-            type: 'warning',
-            timer: 4000
-        });
-
-    });
-</script>
-
+@yield('js')
 
 </html>

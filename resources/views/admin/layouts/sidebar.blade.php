@@ -38,7 +38,7 @@
                         <li><a href="{{ route('admin.post.edit') }}">{{ trans('post.create') }}</a></li>
                         <li><a href="{{ route('admin.post') }}">{{ trans('post.post_list') }}</a></li>
                         <li><a href="{{ route('admin.post.not_published') }}">{{ trans('post.not_published') }}</a></li>
-                        <li><a href="components/icons.html">回收站</a></li>
+                        <li><a href="{{ route('admin.post.trash') }}">回收站</a></li>
                     </ul>
                 </div>
             </li>
